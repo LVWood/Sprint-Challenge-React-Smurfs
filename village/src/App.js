@@ -13,7 +13,7 @@ class App extends Component {
     super(props);
     this.state = {
       smurfs: [],
-      activeSmurf: null
+      activeSmurf: null,
     };
   }
 
@@ -42,12 +42,11 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           <NavBar />
         </div>
-        
-        <Route exact path="/smurfs" render={props => (
+        <Route path="/smurfs" render={props => (
           <Smurfs {...props} smurfs={this.state.smurfs} />
         )} />
         <Route path="/smurf-form" render={props => (
-          <SmurfForm {...props} addSmurf={this.addSmurf} smurfs={this.state.smurfs} />
+          <SmurfForm {...props} addSmurf={this.addSmurf} smurfs={this.state.smurfs}  />
         )} />
       </div>
     );

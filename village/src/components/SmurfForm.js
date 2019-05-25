@@ -9,7 +9,7 @@ class SmurfForm extends Component {
         name: '',
         age: '',
         height: ''
-      },     
+      },   
     };
   }
 
@@ -33,7 +33,8 @@ class SmurfForm extends Component {
       smurf: {
         ...prevState.smurf,
         [e.target.name]: e.target.value 
-      }
+      },
+      successMessage: true
     }));
   };
 
