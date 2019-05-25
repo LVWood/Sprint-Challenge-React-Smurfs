@@ -5,8 +5,10 @@ import Smurf from './Smurf';
 class Smurfs extends Component {
   render() {
     return (
-      <div className="Smurfs">
-        <h1>Current Residents of Smurf Village</h1>
+      <div>
+        <div className="smurf-title"> 
+          <h1>Current Residents of Smurf Village</h1>
+        </div>
         <ul>
           {this.props.smurfs.map(smurf => {
             return (

@@ -1,3 +1,53 @@
 .App {
   text-align: center;
 }
+
+.header-bar {
+  height: 150px;
+  background-color: #62cdfd;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.menu {
+  height: 50px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  line-height: 1.2rem;
+  text-decoration: none;
+  color: #62cdfd;
+  margin: 0 20px;
+}
+
+.smurf-title {
+  color:  #62cdfd
+}
+
+.citizen-card {
+  border: 2px solid #62cdfd;
+  border-radius: 20px
+}
+.Smurf {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: .6rem;
+}
+
+.details {
+  line-height: .4rem;
+}
+
+.SmurfForm {
+  margin: 30px;
+}
